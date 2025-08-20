@@ -28,7 +28,7 @@ cp .env.example .env
 docker compose up -d
 ```
 
-### Common Settings
+### Settings
 
 | Variable | Default | Description |
 |----------|---------|-------------|
