@@ -5,7 +5,7 @@ A containerized Tekkit Classic Minecraft server.
 ## Quick Start
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Jiffy953/Tekkit-Classic-Docker
 cd tekkit-classic-docker
 docker compose up -d
 ```
