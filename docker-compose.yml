@@ -1,6 +1,6 @@
 services:
   tekkit:
-    build: .
+    image: jiffy953/tekkit-classic:latest
     container_name: tekkit-classic
     restart: unless-stopped
     ports:
@@ -8,13 +8,11 @@ services:
     volumes:
       - tekkit-server-data:/server
     environment:
-      # Java settings
       - JAVA_MEMORY=${JAVA_MEMORY:-2G}
-      
-      # Server settings  
+      - JAVA_OPTS=${JAVA_OPTS:--XX:+UseG1GC -XX:+UseStringDeduplication}
       - SERVER_PORT=${SERVER_PORT:-25565}
       - MAX_PLAYERS=${MAX_PLAYERS:-20}
-      - DIFFICULTY=${DIFFICULTY:-2}
+      - DIFFICULTY=${DIFFICULTY:-1}
       - GAMEMODE=${GAMEMODE:-0}
       - MOTD=${MOTD:-Tekkit Classic Server}
       - PVP=${PVP:-true}
