@@ -1,6 +1,6 @@
 services:
   tekkit:
-    image: jiffy953/tekkit-classic:latest
+    image: wizardnun/tekkit-classic:latest
     container_name: tekkit-classic
     restart: unless-stopped
     ports:

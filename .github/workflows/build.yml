@@ -53,7 +53,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: jiffy953/tekkit-classic
+          images: wizardnun/tekkit-classic
           tags: |
             type=ref,event=branch
             type=semver,pattern={{version}}
